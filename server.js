@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // 3 views code 
 app.set("wiews", "views");
-app.set("view engine", "ejs");
+app.set("wiew engine", "ejs");
 
 // 4 routing code
 app.get("/hello",function(req,res) {
