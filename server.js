@@ -14,15 +14,30 @@ app.use(express.urlencoded({ extended: true }));
 
 // 3 views code 
 app.set("wiews", "views");
+<<<<<<< HEAD
 app.set("wiews" engine", "ejs");
+=======
+app.set("wiews engine", "ejs");
+>>>>>>> 161d4ac (Express framework va bu framework orqali web server quramiz)
 
-// 4 routing code
-app.get("/hello",function(req,res) {
-    res.end(`<h1> Hello World </h1>`);
+// // 4 routing code
+// app.get("/hello",function(req,res) {
+//     res.end(`<h1> Hello World </h1>`);
+// });
+//     app.get("/gift",function(req,res) {
+//     res.end(`<h1> siz sovgalar bolimidasz </h1>`);
+// });
+
+app.post("/harid",(req,res) => {
+    console.log(req.body);
+    res.render("harid", { data: req.body });
 });
-    app.get("/gift",function(req,res) {
-    res.end(`<h1> siz sovgalar bolimidasz </h1>`);
+
+
+app.get("/",function(req,res) {
+    res.render("harid");
 });
+
 
 const server = http.createServer(app);
 let PORT = 3000;
