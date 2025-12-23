@@ -30,7 +30,7 @@ app.set("wiews engine", "ejs");
 
 app.post("/harid",(req,res) => {
     console.log(req.body);
-    res.render("harid", { data: req.body });
+    res.json({test:"ok"});      
 });
 
 
