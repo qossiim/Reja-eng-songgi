@@ -1,0 +1,1 @@
+console.log("trein ishga tushdi...");
