@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 // 2 session
 
 // 3 views code 
-app.set("wiews", "views");
+app.set("views", "views");
 <<<<<<< HEAD
-app.set("wiews" engine", "ejs");
+app.set("views" engine", "ejs");
 =======
 app.set("wiews engine", "ejs");
 >>>>>>> 161d4ac (Express framework va bu framework orqali web server quramiz)
